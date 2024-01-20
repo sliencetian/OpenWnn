@@ -430,7 +430,7 @@ public class OpenWnnJAJP extends OpenWnn {
                 public void handleMessage(Message msg) {
                 switch (msg.what) {
                 case MSG_PREDICTION:
-                    updatePrediction();
+//                    updatePrediction();
                     break;
                 case MSG_START_TUTORIAL:
                     if (mTutorial == null) {
