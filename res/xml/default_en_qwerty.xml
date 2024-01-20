@@ -15,68 +15,68 @@
  limitations under the License.
 -->
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:keyWidth="10%p"
-	  android:horizontalGap="0dip"
-	  android:verticalGap="0dip"
-	  android:keyHeight="@dimen/key_height"
-	  >
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    openWnn:keyWidth="10%p"
+    openWnn:horizontalGap="0dip"
+    openWnn:verticalGap="0dip"
+    openWnn:keyHeight="@dimen/key_height">
 
   <Row>
-    <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"/>
-    <Key android:codes="119" android:keyLabel="w"/>
-    <Key android:codes="101" android:keyLabel="e"/>
-    <Key android:codes="114" android:keyLabel="r"/>
-    <Key android:codes="116" android:keyLabel="t"/>
-    <Key android:codes="121" android:keyLabel="y"/>
-    <Key android:codes="117" android:keyLabel="u"/>
-    <Key android:codes="105" android:keyLabel="i"/>
-    <Key android:codes="111" android:keyLabel="o"/>
-    <Key android:codes="112" android:keyLabel="p" android:keyEdgeFlags="right"/>
+    <Key openWnn:codes="113" openWnn:keyLabel="q" openWnn:keyEdgeFlags="left"/>
+    <Key openWnn:codes="119" openWnn:keyLabel="w"/>
+    <Key openWnn:codes="101" openWnn:keyLabel="e"/>
+    <Key openWnn:codes="114" openWnn:keyLabel="r"/>
+    <Key openWnn:codes="116" openWnn:keyLabel="t"/>
+    <Key openWnn:codes="121" openWnn:keyLabel="y"/>
+    <Key openWnn:codes="117" openWnn:keyLabel="u"/>
+    <Key openWnn:codes="105" openWnn:keyLabel="i"/>
+    <Key openWnn:codes="111" openWnn:keyLabel="o"/>
+    <Key openWnn:codes="112" openWnn:keyLabel="p" openWnn:keyEdgeFlags="right"/>
   </Row>
   
   <Row>
-    <Key android:codes="97" android:keyLabel="a" android:horizontalGap="5%p" 
-         android:keyEdgeFlags="left"/>
-    <Key android:codes="115" android:keyLabel="s"/>
-    <Key android:codes="100" android:keyLabel="d"/>
-    <Key android:codes="102" android:keyLabel="f"/>
-    <Key android:codes="103" android:keyLabel="g"/>
-    <Key android:codes="104" android:keyLabel="h"/>
-    <Key android:codes="106" android:keyLabel="j"/>
-    <Key android:codes="107" android:keyLabel="k"/>
-    <Key android:codes="108" android:keyLabel="l" android:keyEdgeFlags="right"/>
+    <Key openWnn:codes="97" openWnn:keyLabel="a" openWnn:horizontalGap="5%p"
+         openWnn:keyEdgeFlags="left"/>
+    <Key openWnn:codes="115" openWnn:keyLabel="s"/>
+    <Key openWnn:codes="100" openWnn:keyLabel="d"/>
+    <Key openWnn:codes="102" openWnn:keyLabel="f"/>
+    <Key openWnn:codes="103" openWnn:keyLabel="g"/>
+    <Key openWnn:codes="104" openWnn:keyLabel="h"/>
+    <Key openWnn:codes="106" openWnn:keyLabel="j"/>
+    <Key openWnn:codes="107" openWnn:keyLabel="k"/>
+    <Key openWnn:codes="108" openWnn:keyLabel="l" openWnn:keyEdgeFlags="right"/>
   </Row>
   
   <Row>
-    <Key android:codes="-1"
-	 android:keyIcon="@drawable/key_qwerty_shift" android:iconPreview="@drawable/key_qwerty_shift_b"
-         android:keyWidth="15%p" android:isModifier="true"
-         android:isSticky="true" android:keyEdgeFlags="left"/>
-    <Key android:codes="122" android:keyLabel="z"/>
-    <Key android:codes="120" android:keyLabel="x"/>
-    <Key android:codes="99" android:keyLabel="c"/>
-    <Key android:codes="118" android:keyLabel="v"/>
-    <Key android:codes="98" android:keyLabel="b"/>
-    <Key android:codes="110" android:keyLabel="n"/>
-    <Key android:codes="109" android:keyLabel="m"/>
-    <Key android:codes="-100"
-	 android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
-	 android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    <Key openWnn:codes="-1"
+	 openWnn:keyIcon="@drawable/key_qwerty_shift" openWnn:iconPreview="@drawable/key_qwerty_shift_b"
+         openWnn:keyWidth="15%p" openWnn:isModifiereFlags="true"
+         openWnn:isSticky="true" openWnn:keyEdgeFlags="left"/>
+    <Key openWnn:codes="122" openWnn:keyLabel="z"/>
+    <Key openWnn:codes="120" openWnn:keyLabel="x"/>
+    <Key openWnn:codes="99" openWnn:keyLabel="c"/>
+    <Key openWnn:codes="118" openWnn:keyLabel="v"/>
+    <Key openWnn:codes="98" openWnn:keyLabel="b"/>
+    <Key openWnn:codes="110" openWnn:keyLabel="n"/>
+    <Key openWnn:codes="109" openWnn:keyLabel="m"/>
+    <Key openWnn:codes="-100"
+	 openWnn:keyIcon="@drawable/key_del" openWnn:iconPreview="@drawable/key_del_b"
+	 openWnn:keyWidth="15%p" openWnn:keyEdgeFlags="right" openWnn:isRepeatable="true"/>
   </Row>
   
-  <Row android:rowEdgeFlags="bottom">
-    <Key android:codes="-114" android:keyLabel="ALT"
-	 android:popupKeyboard="@xml/default_en_switch_key"
-         android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-    <Key android:codes="-106" android:keyLabel="SYM" android:keyWidth="10%p"/>
-    <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
-    <Key android:codes="32"
-	 android:keyIcon="@drawable/key_qwerty_space" android:iconPreview="@drawable/key_qwerty_space_b" 
-         android:keyWidth="30%p" android:isRepeatable="true"/>
-    <Key android:codes="46" android:keyLabel="."  android:keyWidth="10%p"/>
-    <Key android:codes="63" android:keyLabel="\?" android:keyWidth="10%p"/>
-    <Key android:codes="-101"
-	 android:keyIcon="@drawable/key_enter" android:iconPreview="@drawable/key_enter_b"
-         android:keyWidth="15%p" android:keyEdgeFlags="right"/>
+  <Row openWnn:rowEdgeFlags="bottom">
+    <Key openWnn:codes="-114" openWnn:keyLabel="ALT"
+	 openWnn:popupKeyboard="@xml/default_en_switch_key"
+         openWnn:keyWidth="15%p" openWnn:keyEdgeFlags="left"/>
+    <Key openWnn:codes="-106" openWnn:keyLabel="SYM" openWnn:keyWidth="10%p"/>
+    <Key openWnn:codes="44" openWnn:keyLabel="," openWnn:keyWidth="10%p"/>
+    <Key openWnn:codes="32"
+	 openWnn:keyIcon="@drawable/key_qwerty_space" openWnn:iconPreview="@drawable/key_qwerty_space_b"
+         openWnn:keyWidth="30%p" openWnn:isRepeatable="true"/>
+    <Key openWnn:codes="46" openWnn:keyLabel="."  openWnn:keyWidth="10%p"/>
+    <Key openWnn:codes="63" openWnn:keyLabel="\?" openWnn:keyWidth="10%p"/>
+    <Key openWnn:codes="-101"
+	 openWnn:keyIcon="@drawable/key_enter" openWnn:iconPreview="@drawable/key_enter_b"
+         openWnn:keyWidth="15%p" openWnn:keyEdgeFlags="right"/>
   </Row>
 </Keyboard>

@@ -17,14 +17,15 @@
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:wnn="http://schemas.android.com/apk/res/jp.co.omronsoft.openwnn"
-    android:keyHeight="@dimen/key_height_4key"
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    openWnn:keyHeight="@dimen/key_height_4key"
     >
 
     <Row>
-        <Key android:codes="-300" android:keyLabel="@string/key_symbol_mode" android:keyEdgeFlags="left" android:keyWidth="25%p" wnn:isSecondKey="true"/>
-        <Key android:codes="-301" android:keyWidth="25%p" android:keyLabel="\u25b2" wnn:isSecondKey="true" />
-        <Key android:codes="-302" android:keyWidth="25%p" android:keyLabel="\u25bc" wnn:isSecondKey="true" />
-        <Key android:codes="-303" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b" android:isRepeatable="true" android:keyEdgeFlags="right" android:keyWidth="25%p" wnn:isSecondKey="true" />
+        <Key openWnn:codes="-300" openWnn:keyLabel="@string/key_symbol_mode" openWnn:keyEdgeFlags="left" openWnn:keyWidth="25%p" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-301" openWnn:keyWidth="25%p" openWnn:keyLabel="\u25b2" wnn:isSecondKey="true" />
+        <Key openWnn:codes="-302" openWnn:keyWidth="25%p" openWnn:keyLabel="\u25bc" wnn:isSecondKey="true" />
+        <Key openWnn:codes="-303" openWnn:keyIcon="@drawable/key_del" openWnn:iconPreview="@drawable/key_del_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right" openWnn:keyWidth="25%p" wnn:isSecondKey="true" />
     </Row>
 </Keyboard>
 

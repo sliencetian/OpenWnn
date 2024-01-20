@@ -15,13 +15,12 @@
  limitations under the License.
 -->
 
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/keyboard_popup_panel_background"
-        >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/keyboard_popup_panel_background">
  
     <jp.co.omronsoft.openwnn.KeyboardView
             android:id="@+id/keyboardView"
@@ -29,17 +28,17 @@
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:keyBackground="@drawable/btn_keyboard_key_std"
-            android:verticalCorrection="-10dip"
-            android:keyPreviewLayout="@layout/keyboard_key_preview"
-            android:keyPreviewOffset="-12dip"
-            android:keyPreviewHeight="80dip"
-            android:keyTextSize="22dip"
-            android:keyTextColor="@color/key_text_color_std"
-            android:labelTextSize="14dip"
-            android:popupLayout="@layout/keyboard_popup_keyboard"
-            android:shadowColor="#BB000000"
-            android:shadowRadius="0.5"
+            openWnn:keyBackground="@drawable/btn_keyboard_key_std"
+            openWnn:verticalCorrection="-10dip"
+            openWnn:keyPreviewLayout="@layout/keyboard_key_preview"
+            openWnn:keyPreviewOffset="-12dip"
+            openWnn:keyPreviewHeight="80dip"
+            openWnn:keyTextSize="22dip"
+            openWnn:keyTextColor="@color/key_text_color_std"
+            openWnn:labelTextSize="14dip"
+            openWnn:popupLayout="@layout/keyboard_popup_keyboard"
+            openWnn:shadowColor="#BB000000"
+            openWnn:shadowRadius="0.5"
             />
     <ImageButton android:id="@+id/closeButton"
         android:background="@android:color/transparent"

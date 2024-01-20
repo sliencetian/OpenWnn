@@ -15,14 +15,15 @@
  limitations under the License.
 -->
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:keyWidth="15%p"
-	  android:horizontalGap="0dip"
-	  android:verticalGap="0dip"
-	  android:keyHeight="50dip" >
+	xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+	  openWnn:keyWidth="15%p"
+	  openWnn:horizontalGap="0dip"
+	  openWnn:verticalGap="0dip"
+	  openWnn:keyHeight="50dip" >
   <Row>
-    <Key android:codes="-113" android:keyLabel="@string/key_12key_switch_half_alphabet"
-	 android:keyEdgeFlags="left"/>
-    <Key android:codes="-112" android:keyLabel="@string/key_12key_switch_half_number"
-	 android:keyEdgeFlags="right"/>
+    <Key openWnn:codes="-113" openWnn:keyLabel="@string/key_12key_switch_half_alphabet"
+	 openWnn:keyEdgeFlags="left"/>
+    <Key openWnn:codes="-112" openWnn:keyLabel="@string/key_12key_switch_half_number"
+	 openWnn:keyEdgeFlags="right"/>
   </Row>
 </Keyboard>

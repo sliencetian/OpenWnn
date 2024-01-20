@@ -45,12 +45,12 @@ import org.xmlpull.v1.XmlPullParserException;
  * <p>The layout file for a keyboard contains XML that looks like the following snippet:</p>
  * <pre>
  * &lt;Keyboard
- *         android:keyWidth="%10p"
- *         android:keyHeight="50px"
- *         android:horizontalGap="2px"
- *         android:verticalGap="2px" &gt;
- *     &lt;Row android:keyWidth="32px" &gt;
- *         &lt;Key android:keyLabel="A" /&gt;
+ *         openWnn:keyWidth="%10p"
+ *         openWnn:keyHeight="50px"
+ *         openWnn:horizontalGap="2px"
+ *         openWnn:verticalGap="2px" &gt;
+ *     &lt;Row openWnn:keyWidth="32px" &gt;
+ *         &lt;Key openWnn:keyLabel="A" /&gt;
  *         ...
  *     &lt;/Row&gt;
  *     ...
@@ -193,25 +193,47 @@ public class Keyboard {
         /** Constructor */
         public Row(Resources res, Keyboard parent, XmlResourceParser parser) {
             this.parent = parent;
+//            TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
+//                    android.R.styleable.Keyboard);
+//            defaultWidth = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_keyWidth,
+//                    parent.mDisplayWidth, parent.mDefaultWidth);
+//            defaultHeight = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_keyHeight,
+//                    parent.mDisplayHeight, parent.mDefaultHeight);
+//            defaultHorizontalGap = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_horizontalGap,
+//                    parent.mDisplayWidth, parent.mDefaultHorizontalGap);
+//            verticalGap = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_verticalGap,
+//                    parent.mDisplayHeight, parent.mDefaultVerticalGap);
+//            a.recycle();
+//            a = res.obtainAttributes(Xml.asAttributeSet(parser),
+//                    android.R.styleable.Keyboard_Row);
+//            rowEdgeFlags = a.getInt(android.R.styleable.Keyboard_Row_rowEdgeFlags, 0);
+//            mode = a.getResourceId(android.R.styleable.Keyboard_Row_keyboardMode,
+//                    0);
+
+
             TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
-                    android.R.styleable.Keyboard);
+                    R.styleable.OpenWnn_Keyboard);
             defaultWidth = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_keyWidth,
+                    R.styleable.OpenWnn_Keyboard_keyWidth,
                     parent.mDisplayWidth, parent.mDefaultWidth);
             defaultHeight = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_keyHeight,
+                    R.styleable.OpenWnn_Keyboard_keyHeight,
                     parent.mDisplayHeight, parent.mDefaultHeight);
             defaultHorizontalGap = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_horizontalGap,
+                    R.styleable.OpenWnn_Keyboard_horizontalGap,
                     parent.mDisplayWidth, parent.mDefaultHorizontalGap);
             verticalGap = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_verticalGap,
+                    R.styleable.OpenWnn_Keyboard_verticalGap,
                     parent.mDisplayHeight, parent.mDefaultVerticalGap);
             a.recycle();
             a = res.obtainAttributes(Xml.asAttributeSet(parser),
-                    android.R.styleable.Keyboard_Row);
-            rowEdgeFlags = a.getInt(android.R.styleable.Keyboard_Row_rowEdgeFlags, 0);
-            mode = a.getResourceId(android.R.styleable.Keyboard_Row_keyboardMode,
+                    R.styleable.OpenWnn_Keyboard_Row);
+            rowEdgeFlags = a.getInt(R.styleable.OpenWnn_Keyboard_Row_rowEdgeFlags, 0);
+            mode = a.getResourceId(R.styleable.OpenWnn_Keyboard_Row_keyboardMode,
                     0);
         }
     }
@@ -326,24 +348,77 @@ public class Keyboard {
             this.x = x;
             this.y = y;
  
-            TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser), 
-                    android.R.styleable.Keyboard);
+//            TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
+//                    android.R.styleable.Keyboard);
+//
+//            width = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_keyWidth,
+//                    keyboard.mDisplayWidth, parent.defaultWidth);
+//            height = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_keyHeight,
+//                    keyboard.mDisplayHeight, parent.defaultHeight);
+//            gap = getDimensionOrFraction(a,
+//                    android.R.styleable.Keyboard_horizontalGap,
+//                    keyboard.mDisplayWidth, parent.defaultHorizontalGap);
+//            a.recycle();
+//            a = res.obtainAttributes(Xml.asAttributeSet(parser),
+//                    android.R.styleable.Keyboard_Key);
+//            this.x += gap;
+//            TypedValue codesValue = new TypedValue();
+//            a.getValue(android.R.styleable.Keyboard_Key_codes,
+//                    codesValue);
+//            if (codesValue.type == TypedValue.TYPE_INT_DEC
+//                    || codesValue.type == TypedValue.TYPE_INT_HEX) {
+//                codes = new int[] { codesValue.data };
+//            } else if (codesValue.type == TypedValue.TYPE_STRING) {
+//                codes = parseCSV(codesValue.string.toString());
+//            }
+//
+//            iconPreview = a.getDrawable(android.R.styleable.Keyboard_Key_iconPreview);
+//            if (iconPreview != null) {
+//                iconPreview.setBounds(0, 0, iconPreview.getIntrinsicWidth(),
+//                        iconPreview.getIntrinsicHeight());
+//            }
+//            popupCharacters = a.getText(
+//                    android.R.styleable.Keyboard_Key_popupCharacters);
+//            popupResId = a.getResourceId(
+//                    android.R.styleable.Keyboard_Key_popupKeyboard, 0);
+//            repeatable = a.getBoolean(
+//                    android.R.styleable.Keyboard_Key_isRepeatable, false);
+//            modifier = a.getBoolean(
+//                    android.R.styleable.Keyboard_Key_isModifier, false);
+//            sticky = a.getBoolean(
+//                    android.R.styleable.Keyboard_Key_isSticky, false);
+//            edgeFlags = a.getInt(android.R.styleable.Keyboard_Key_keyEdgeFlags, 0);
+//            edgeFlags |= parent.rowEdgeFlags;
+//
+//            icon = a.getDrawable(
+//                    android.R.styleable.Keyboard_Key_keyIcon);
+//            if (icon != null) {
+//                icon.setBounds(0, 0, icon.getIntrinsicWidth(), icon.getIntrinsicHeight());
+//            }
+//            label = a.getText(android.R.styleable.Keyboard_Key_keyLabel);
+//            text = a.getText(android.R.styleable.Keyboard_Key_keyOutputText);
+
+
+            TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
+                    R.styleable.OpenWnn_Keyboard);
 
             width = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_keyWidth,
+                    R.styleable.OpenWnn_Keyboard_keyWidth,
                     keyboard.mDisplayWidth, parent.defaultWidth);
             height = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_keyHeight,
+                    R.styleable.OpenWnn_Keyboard_keyHeight,
                     keyboard.mDisplayHeight, parent.defaultHeight);
             gap = getDimensionOrFraction(a,
-                    android.R.styleable.Keyboard_horizontalGap,
+                    R.styleable.OpenWnn_Keyboard_horizontalGap,
                     keyboard.mDisplayWidth, parent.defaultHorizontalGap);
             a.recycle();
             a = res.obtainAttributes(Xml.asAttributeSet(parser),
-                    android.R.styleable.Keyboard_Key);
+                    R.styleable.OpenWnn_Keyboard_Key);
             this.x += gap;
             TypedValue codesValue = new TypedValue();
-            a.getValue(android.R.styleable.Keyboard_Key_codes,
+            a.getValue(R.styleable.OpenWnn_Keyboard_Key_codes,
                     codesValue);
             if (codesValue.type == TypedValue.TYPE_INT_DEC
                     || codesValue.type == TypedValue.TYPE_INT_HEX) {
@@ -351,32 +426,32 @@ public class Keyboard {
             } else if (codesValue.type == TypedValue.TYPE_STRING) {
                 codes = parseCSV(codesValue.string.toString());
             }
- 
-            iconPreview = a.getDrawable(android.R.styleable.Keyboard_Key_iconPreview);
+
+            iconPreview = a.getDrawable(R.styleable.OpenWnn_Keyboard_Key_iconPreview);
             if (iconPreview != null) {
                 iconPreview.setBounds(0, 0, iconPreview.getIntrinsicWidth(),
                         iconPreview.getIntrinsicHeight());
             }
             popupCharacters = a.getText(
-                    android.R.styleable.Keyboard_Key_popupCharacters);
+                    R.styleable.OpenWnn_Keyboard_Key_popupCharacters);
             popupResId = a.getResourceId(
-                    android.R.styleable.Keyboard_Key_popupKeyboard, 0);
+                    R.styleable.OpenWnn_Keyboard_Key_popupKeyboard, 0);
             repeatable = a.getBoolean(
-                    android.R.styleable.Keyboard_Key_isRepeatable, false);
+                    R.styleable.OpenWnn_Keyboard_Key_isRepeatable, false);
             modifier = a.getBoolean(
-                    android.R.styleable.Keyboard_Key_isModifier, false);
+                    R.styleable.OpenWnn_Keyboard_Key_isModifier, false);
             sticky = a.getBoolean(
-                    android.R.styleable.Keyboard_Key_isSticky, false);
-            edgeFlags = a.getInt(android.R.styleable.Keyboard_Key_keyEdgeFlags, 0);
+                    R.styleable.OpenWnn_Keyboard_Key_isSticky, false);
+            edgeFlags = a.getInt(R.styleable.OpenWnn_Keyboard_Key_keyEdgeFlags, 0);
             edgeFlags |= parent.rowEdgeFlags;
 
             icon = a.getDrawable(
-                    android.R.styleable.Keyboard_Key_keyIcon);
+                    R.styleable.OpenWnn_Keyboard_Key_keyIcon);
             if (icon != null) {
                 icon.setBounds(0, 0, icon.getIntrinsicWidth(), icon.getIntrinsicHeight());
             }
-            label = a.getText(android.R.styleable.Keyboard_Key_keyLabel);
-            text = a.getText(android.R.styleable.Keyboard_Key_keyOutputText);
+            label = a.getText(R.styleable.OpenWnn_Keyboard_Key_keyLabel);
+            text = a.getText(R.styleable.OpenWnn_Keyboard_Key_keyOutputText);
  
             if (codes == null && !TextUtils.isEmpty(label)) {
                 codes = new int[] { label.charAt(0) };
@@ -828,20 +903,37 @@ public class Keyboard {
     }
  
     private void parseKeyboardAttributes(Resources res, XmlResourceParser parser) {
+//        TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
+//                android.R.styleable.Keyboard);
+//
+//        mDefaultWidth = getDimensionOrFraction(a,
+//                android.R.styleable.Keyboard_keyWidth,
+//                mDisplayWidth, mDisplayWidth / 10);
+//        mDefaultHeight = getDimensionOrFraction(a,
+//                android.R.styleable.Keyboard_keyHeight,
+//                mDisplayHeight, 75);
+//        mDefaultHorizontalGap = getDimensionOrFraction(a,
+//                android.R.styleable.Keyboard_horizontalGap,
+//                mDisplayWidth, 0);
+//        mDefaultVerticalGap = getDimensionOrFraction(a,
+//                android.R.styleable.Keyboard_verticalGap,
+//                mDisplayHeight, 0);
+
+
         TypedArray a = res.obtainAttributes(Xml.asAttributeSet(parser),
-                android.R.styleable.Keyboard);
+                R.styleable.OpenWnn_Keyboard);
 
         mDefaultWidth = getDimensionOrFraction(a,
-                android.R.styleable.Keyboard_keyWidth,
+                R.styleable.OpenWnn_Keyboard_keyWidth,
                 mDisplayWidth, mDisplayWidth / 10);
         mDefaultHeight = getDimensionOrFraction(a,
-                android.R.styleable.Keyboard_keyHeight,
+                R.styleable.OpenWnn_Keyboard_keyHeight,
                 mDisplayHeight, 75);
         mDefaultHorizontalGap = getDimensionOrFraction(a,
-                android.R.styleable.Keyboard_horizontalGap,
+                R.styleable.OpenWnn_Keyboard_horizontalGap,
                 mDisplayWidth, 0);
         mDefaultVerticalGap = getDimensionOrFraction(a,
-                android.R.styleable.Keyboard_verticalGap,
+                R.styleable.OpenWnn_Keyboard_verticalGap,
                 mDisplayHeight, 0);
         mProximityThreshold = (int) (mDefaultWidth * SEARCH_DISTANCE);
         mProximityThreshold = mProximityThreshold * mProximityThreshold;

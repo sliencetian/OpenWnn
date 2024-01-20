@@ -16,46 +16,47 @@
 -->
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:wnn="http://schemas.android.com/apk/res/jp.co.omronsoft.openwnn"
-    android:keyWidth="20%p"
-    android:horizontalGap="0dip"
-    android:verticalGap="0dip"
-    android:keyHeight="@dimen/key_height"
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    openWnn:keyWidth="20%p"
+    openWnn:horizontalGap="0dip"
+    openWnn:verticalGap="0dip"
+    openWnn:keyHeight="@dimen/key_height"
     >
   
     <Row>
-        <Key android:codes="-219" android:keyIcon="@drawable/key_12key_reverse" android:iconPreview="@drawable/key_12key_reverse_b"
-             android:keyEdgeFlags="left" android:keyWidth="18%" wnn:isSecondKey="true"/>
-        <Key android:codes="-201" android:keyLabel="@string/key_12key_katakana_1" android:horizontalGap="2%"/>
-        <Key android:codes="-202" android:keyLabel="@string/key_12key_katakana_2"/>
-        <Key android:codes="-203" android:keyLabel="@string/key_12key_katakana_3"/>
-        <Key android:codes="-214" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
-             android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-219" openWnn:keyIcon="@drawable/key_12key_reverse" openWnn:iconPreview="@drawable/key_12key_reverse_b"
+             openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-201" openWnn:keyLabel="@string/key_12key_katakana_1" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="-202" openWnn:keyLabel="@string/key_12key_katakana_2"/>
+        <Key openWnn:codes="-203" openWnn:keyLabel="@string/key_12key_katakana_3"/>
+        <Key openWnn:codes="-214" openWnn:keyIcon="@drawable/key_del" openWnn:iconPreview="@drawable/key_del_b"
+             openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
     </Row>
     
     <Row>
-        <Key android:codes="-218" android:keyIcon="@drawable/key_12key_left" android:iconPreview="@drawable/key_12key_left_b" android:isRepeatable="true" android:keyEdgeFlags="left" android:keyWidth="18%" wnn:isSecondKey="true"/>
-        <Key android:codes="-204" android:keyLabel="@string/key_12key_katakana_4" android:horizontalGap="2%"/>
-        <Key android:codes="-205" android:keyLabel="@string/key_12key_katakana_5"/>
-        <Key android:codes="-206" android:keyLabel="@string/key_12key_katakana_6"/>
-        <Key android:codes="-217" android:keyIcon="@drawable/key_12key_right" android:iconPreview="@drawable/key_12key_right_b" android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-218" openWnn:keyIcon="@drawable/key_12key_left" openWnn:iconPreview="@drawable/key_12key_left_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-204" openWnn:keyLabel="@string/key_12key_katakana_4" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="-205" openWnn:keyLabel="@string/key_12key_katakana_5"/>
+        <Key openWnn:codes="-206" openWnn:keyLabel="@string/key_12key_katakana_6"/>
+        <Key openWnn:codes="-217" openWnn:keyIcon="@drawable/key_12key_right" openWnn:iconPreview="@drawable/key_12key_right_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
     </Row>
     
     <Row>
-        <Key android:codes="-222"  android:keyIcon="@drawable/key_12key_pict_sym" android:iconPreview="@drawable/key_pict_sym_b"
-	     android:keyEdgeFlags="left" android:keyWidth="18%" wnn:isSecondKey="true"/>
-        <Key android:codes="-207" android:keyLabel="@string/key_12key_katakana_7" android:horizontalGap="2%"/>
-        <Key android:codes="-208" android:keyLabel="@string/key_12key_katakana_8"/>
-        <Key android:codes="-209" android:keyLabel="@string/key_12key_katakana_9"/>
-        <Key android:codes="-215" android:keyIcon="@drawable/key_12key_space" android:iconPreview="@drawable/key_12key_space_b" android:isRepeatable="true" android:keyEdgeFlags="right"  android:horizontalGap="2%" android:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-222"  openWnn:keyIcon="@drawable/key_12key_pict_sym" openWnn:iconPreview="@drawable/key_pict_sym_b"
+	     openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-207" openWnn:keyLabel="@string/key_12key_katakana_7" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="-208" openWnn:keyLabel="@string/key_12key_katakana_8"/>
+        <Key openWnn:codes="-209" openWnn:keyLabel="@string/key_12key_katakana_9"/>
+        <Key openWnn:codes="-215" openWnn:keyIcon="@drawable/key_12key_space" openWnn:iconPreview="@drawable/key_12key_space_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right"  openWnn:horizontalGap="2%" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
     </Row>
     
-    <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-230" android:keyIcon="@drawable/key_mode_half_kata" android:iconPreview="@drawable/key_mode_change_b"
-	     android:popupKeyboard="@xml/keyboard_switch_key_jp" android:keyEdgeFlags="left" android:keyWidth="18%" wnn:isSecondKey="true"/>
-        <Key android:codes="-213" android:keyIcon="@drawable/key_12key_dakuten" android:iconPreview="@drawable/key_12key_dakuten_b"   android:horizontalGap="2%"/>
-        <Key android:codes="-210" android:keyLabel="@string/key_12key_katakana_0" />
-        <Key android:codes="-211" android:keyIcon="@drawable/key_12key_ten" android:iconPreview="@drawable/key_12key_ten_b" />
-        <Key android:codes="-216" android:keyIcon="@drawable/key_enter" android:iconPreview="@drawable/key_enter_b"
-             android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" wnn:isSecondKey="true"/>
+    <Row openWnn:rowEdgeFlags="bottom">
+        <Key openWnn:codes="-230" openWnn:keyIcon="@drawable/key_mode_half_kata" openWnn:iconPreview="@drawable/key_mode_change_b"
+	     openWnn:popupKeyboard="@xml/keyboard_switch_key_jp" openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
+        <Key openWnn:codes="-213" openWnn:keyIcon="@drawable/key_12key_dakuten" openWnn:iconPreview="@drawable/key_12key_dakuten_b"   openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="-210" openWnn:keyLabel="@string/key_12key_katakana_0" />
+        <Key openWnn:codes="-211" openWnn:keyIcon="@drawable/key_12key_ten" openWnn:iconPreview="@drawable/key_12key_ten_b" />
+        <Key openWnn:codes="-216" openWnn:keyIcon="@drawable/key_enter" openWnn:iconPreview="@drawable/key_enter_b"
+             openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" wnn:isSecondKey="true"/>
     </Row>
 </Keyboard>

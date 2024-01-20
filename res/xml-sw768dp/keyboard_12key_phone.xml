@@ -17,46 +17,47 @@
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:pj="http://schemas.android.com/apk/res/jp.co.omronsoft.openwnn"
-    android:keyWidth="20%p"
-    android:horizontalGap="0.9%p"
-    android:verticalGap="0.9%p"
-    android:keyHeight="@dimen/key_height"
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    openWnn:keyWidth="20%p"
+    openWnn:horizontalGap="0.9%p"
+    openWnn:verticalGap="0.9%p"
+    openWnn:keyHeight="@dimen/key_height"
     >
 
     <Row>
-        <Key android:codes="-310" android:keyLabel=""
-             android:keyEdgeFlags="left" android:keyWidth="18%" pj:isSecondKey="true"/>
-        <Key android:codes="49" android:keyLabel="1" android:horizontalGap="2%"/>
-        <Key android:codes="50" android:keyLabel="2"/>
-        <Key android:codes="51" android:keyLabel="3"/>
-        <Key android:codes="-214"
-             android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
-             android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="-310" openWnn:keyLabel=""
+             openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="49" openWnn:keyLabel="1" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="50" openWnn:keyLabel="2"/>
+        <Key openWnn:codes="51" openWnn:keyLabel="3"/>
+        <Key openWnn:codes="-214"
+             openWnn:keyIcon="@drawable/key_del" openWnn:iconPreview="@drawable/key_del_b"
+             openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
     </Row>
  
     <Row>
-        <Key android:codes="-218" android:keyIcon="@drawable/key_12key_left" android:iconPreview="@drawable/key_12key_left_b" android:isRepeatable="true" android:keyEdgeFlags="left" android:keyWidth="18%" pj:isSecondKey="true"/>
-        <Key android:codes="52" android:keyLabel="4" android:horizontalGap="2%"/>
-        <Key android:codes="53" android:keyLabel="5"/>
-        <Key android:codes="54" android:keyLabel="6"/>
-        <Key android:codes="-217" android:keyIcon="@drawable/key_12key_right" android:iconPreview="@drawable/key_12key_right_b" android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="-218" openWnn:keyIcon="@drawable/key_12key_left" openWnn:iconPreview="@drawable/key_12key_left_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="left" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="52" openWnn:keyLabel="4" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="53" openWnn:keyLabel="5"/>
+        <Key openWnn:codes="54" openWnn:keyLabel="6"/>
+        <Key openWnn:codes="-217" openWnn:keyIcon="@drawable/key_12key_right" openWnn:iconPreview="@drawable/key_12key_right_b" openWnn:isRepeatable="true" openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
     </Row>
  
     <Row>
-        <Key android:codes="45" android:keyLabel="-" android:keyWidth="18%" pj:isSecondKey="true"/>
-        <Key android:codes="55" android:keyLabel="7" android:horizontalGap="2%"/>
-        <Key android:codes="56" android:keyLabel="8"/>
-        <Key android:codes="57" android:keyLabel="9"/>
-        <Key android:codes="43" android:keyLabel="+" android:horizontalGap="2%" android:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="45" openWnn:keyLabel="-" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="55" openWnn:keyLabel="7" openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="56" openWnn:keyLabel="8"/>
+        <Key openWnn:codes="57" openWnn:keyLabel="9"/>
+        <Key openWnn:codes="43" openWnn:keyLabel="+" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
     </Row>
 
-    <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-310" android:keyLabel="" android:keyEdgeFlags="left"  android:keyWidth="18%" pj:isSecondKey="true"/>
-        <Key android:codes="42" android:keyLabel="*"  android:horizontalGap="2%"/>
-        <Key android:codes="48" android:keyLabel="0" />
-        <Key android:codes="35" android:keyLabel="#" />
-        <Key android:codes="-216" android:keyIcon="@drawable/key_enter"
-             android:iconPreview="@drawable/key_enter_b"
-             android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%" pj:isSecondKey="true"/>
+    <Row openWnn:rowEdgeFlags="bottom">
+        <Key openWnn:codes="-310" openWnn:keyLabel="" openWnn:keyEdgeFlags="left"  openWnn:keyWidth="18%" pj:isSecondKey="true"/>
+        <Key openWnn:codes="42" openWnn:keyLabel="*"  openWnn:horizontalGap="2%"/>
+        <Key openWnn:codes="48" openWnn:keyLabel="0" />
+        <Key openWnn:codes="35" openWnn:keyLabel="#" />
+        <Key openWnn:codes="-216" openWnn:keyIcon="@drawable/key_enter"
+             openWnn:iconPreview="@drawable/key_enter_b"
+             openWnn:keyEdgeFlags="right" openWnn:horizontalGap="2%" openWnn:keyWidth="18%" pj:isSecondKey="true"/>
     </Row>
 </Keyboard>

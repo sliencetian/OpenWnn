@@ -16,70 +16,71 @@
 -->
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:wnn="http://schemas.android.com/apk/res/jp.co.omronsoft.openwnn"
-      android:keyWidth="9%p"
-      android:horizontalGap="0.93%p"
-      android:verticalGap="0dip"
-      android:keyHeight="@dimen/key_height"
+    xmlns:openWnn="http://schemas.android.com/apk/res-auto"
+    openWnn:keyWidth="9%p"
+      openWnn:horizontalGap="0.93%p"
+      openWnn:verticalGap="0dip"
+      openWnn:keyHeight="@dimen/key_height"
   >
 
   <Row>
-    <Key android:codes="113" android:keyLabel="Q" android:keyEdgeFlags="left" android:horizontalGap="1.2%p"/>
-    <Key android:codes="119" android:keyLabel="W"/>
-    <Key android:codes="101" android:keyLabel="E"/>
-    <Key android:codes="114" android:keyLabel="R"/>
-    <Key android:codes="116" android:keyLabel="T"/>
-    <Key android:codes="121" android:keyLabel="Y"/>
-    <Key android:codes="117" android:keyLabel="U"/>
-    <Key android:codes="105" android:keyLabel="I"/>
-    <Key android:codes="111" android:keyLabel="O"/>
-    <Key android:codes="112" android:keyLabel="P" android:keyEdgeFlags="right"/>
+    <Key openWnn:codes="113" openWnn:keyLabel="Q" openWnn:keyEdgeFlags="left" openWnn:horizontalGap="1.2%p"/>
+    <Key openWnn:codes="119" openWnn:keyLabel="W"/>
+    <Key openWnn:codes="101" openWnn:keyLabel="E"/>
+    <Key openWnn:codes="114" openWnn:keyLabel="R"/>
+    <Key openWnn:codes="116" openWnn:keyLabel="T"/>
+    <Key openWnn:codes="121" openWnn:keyLabel="Y"/>
+    <Key openWnn:codes="117" openWnn:keyLabel="U"/>
+    <Key openWnn:codes="105" openWnn:keyLabel="I"/>
+    <Key openWnn:codes="111" openWnn:keyLabel="O"/>
+    <Key openWnn:codes="112" openWnn:keyLabel="P" openWnn:keyEdgeFlags="right"/>
   </Row>
 
   <Row>
-    <Key android:codes="97"  android:keyLabel="A" android:keyEdgeFlags="left" android:horizontalGap="1.2%p"/>
-    <Key android:codes="115" android:keyLabel="S"/>
-    <Key android:codes="100" android:keyLabel="D"/>
-    <Key android:codes="102" android:keyLabel="F"/>
-    <Key android:codes="103" android:keyLabel="G"/>
-    <Key android:codes="104" android:keyLabel="H"/>
-    <Key android:codes="106" android:keyLabel="J"/>
-    <Key android:codes="107" android:keyLabel="K"/>
-    <Key android:codes="108" android:keyLabel="L"/>
-    <Key android:codes="65392" android:keyLabel="@string/key_qwerty_half_tyouon"
-         android:keyEdgeFlags="right"/>
+    <Key openWnn:codes="97"  openWnn:keyLabel="A" openWnn:keyEdgeFlags="left" openWnn:horizontalGap="1.2%p"/>
+    <Key openWnn:codes="115" openWnn:keyLabel="S"/>
+    <Key openWnn:codes="100" openWnn:keyLabel="D"/>
+    <Key openWnn:codes="102" openWnn:keyLabel="F"/>
+    <Key openWnn:codes="103" openWnn:keyLabel="G"/>
+    <Key openWnn:codes="104" openWnn:keyLabel="H"/>
+    <Key openWnn:codes="106" openWnn:keyLabel="J"/>
+    <Key openWnn:codes="107" openWnn:keyLabel="K"/>
+    <Key openWnn:codes="108" openWnn:keyLabel="L"/>
+    <Key openWnn:codes="65392" openWnn:keyLabel="@string/key_qwerty_half_tyouon"
+         openWnn:keyEdgeFlags="right"/>
   </Row>
 
-  <Row android:horizontalGap="0.82%p">
-    <Key android:codes="-1" android:keyIcon="@drawable/key_qwerty_shift"
-         android:iconPreview="@drawable/key_qwerty_shift_b" android:keyWidth="14%p"  android:horizontalGap="1.2%p"
-         android:isModifier="true" android:isSticky="false" android:keyEdgeFlags="left" wnn:isSecondKey="true"/>
-    <Key android:codes="122" android:keyLabel="Z"/>
-    <Key android:codes="120" android:keyLabel="X"/>
-    <Key android:codes="99" android:keyLabel="C"/>
-    <Key android:codes="118" android:keyLabel="V"/>
-    <Key android:codes="98" android:keyLabel="B"/>
-    <Key android:codes="110" android:keyLabel="N"/>
-    <Key android:codes="109" android:keyLabel="M"/>
-    <Key android:codes="-100" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
-         android:keyWidth="13.9%p"
-         android:keyEdgeFlags="right" android:isRepeatable="true" wnn:isSecondKey="true"/>
+  <Row openWnn:horizontalGap="0.82%p">
+    <Key openWnn:codes="-1" openWnn:keyIcon="@drawable/key_qwerty_shift"
+         openWnn:iconPreview="@drawable/key_qwerty_shift_b" openWnn:keyWidth="14%p"  openWnn:horizontalGap="1.2%p"
+         openWnn:isModifiereFlags="true" openWnn:isSticky="false" openWnn:keyEdgeFlags="left" wnn:isSecondKey="true"/>
+    <Key openWnn:codes="122" openWnn:keyLabel="Z"/>
+    <Key openWnn:codes="120" openWnn:keyLabel="X"/>
+    <Key openWnn:codes="99" openWnn:keyLabel="C"/>
+    <Key openWnn:codes="118" openWnn:keyLabel="V"/>
+    <Key openWnn:codes="98" openWnn:keyLabel="B"/>
+    <Key openWnn:codes="110" openWnn:keyLabel="N"/>
+    <Key openWnn:codes="109" openWnn:keyLabel="M"/>
+    <Key openWnn:codes="-100" openWnn:keyIcon="@drawable/key_del" openWnn:iconPreview="@drawable/key_del_b"
+         openWnn:keyWidth="13.9%p"
+         openWnn:keyEdgeFlags="right" openWnn:isRepeatable="true" wnn:isSecondKey="true"/>
   </Row>
 
-  <Row android:rowEdgeFlags="bottom" android:horizontalGap="0.28%p">
-    <Key android:codes="-230" android:keyIcon="@drawable/key_mode_half_kata" android:iconPreview="@drawable/key_mode_change_b"
-	 android:popupKeyboard="@xml/keyboard_switch_key_qwerty_jp" android:horizontalGap="1.2%p"
-         android:keyWidth="15%p" android:keyEdgeFlags="left" wnn:isSecondKey="true"/>
-    <Key android:codes="-106" android:keyIcon="@drawable/key_qwerty_pict_sym" android:iconPreview="@drawable/key_pict_sym_b"
-         android:keyWidth="15%p" wnn:isSecondKey="true"/>
-    <Key android:codes="33" android:keyLabel="!"/>
-    <Key android:codes="32" android:keyIcon="@drawable/key_qwerty_space" android:iconPreview="@drawable/key_qwerty_space_b"
-         android:keyWidth="15.1%p" android:isRepeatable="true"/>
-    <Key android:codes="63" android:keyLabel="\?"/>
-    <Key android:codes="-218" android:keyIcon="@drawable/key_qwerty_left" android:iconPreview="@drawable/key_qwerty_left_b"
-         android:isRepeatable="true" wnn:isSecondKey="true"/>
-    <Key android:codes="-217" android:keyIcon="@drawable/key_qwerty_right" android:iconPreview="@drawable/key_qwerty_right_b"
-         android:isRepeatable="true" wnn:isSecondKey="true"/>
-    <Key android:codes="-101" android:keyIcon="@drawable/key_enter" android:iconPreview="@drawable/key_enter_b"
-         android:keyWidth="15%p" android:keyEdgeFlags="right" wnn:isSecondKey="true"/>
+  <Row openWnn:rowEdgeFlags="bottom" openWnn:horizontalGap="0.28%p">
+    <Key openWnn:codes="-230" openWnn:keyIcon="@drawable/key_mode_half_kata" openWnn:iconPreview="@drawable/key_mode_change_b"
+	 openWnn:popupKeyboard="@xml/keyboard_switch_key_qwerty_jp" openWnn:horizontalGap="1.2%p"
+         openWnn:keyWidth="15%p" openWnn:keyEdgeFlags="left" wnn:isSecondKey="true"/>
+    <Key openWnn:codes="-106" openWnn:keyIcon="@drawable/key_qwerty_pict_sym" openWnn:iconPreview="@drawable/key_pict_sym_b"
+         openWnn:keyWidth="15%p" wnn:isSecondKey="true"/>
+    <Key openWnn:codes="33" openWnn:keyLabel="!"/>
+    <Key openWnn:codes="32" openWnn:keyIcon="@drawable/key_qwerty_space" openWnn:iconPreview="@drawable/key_qwerty_space_b"
+         openWnn:keyWidth="15.1%p" openWnn:isRepeatable="true"/>
+    <Key openWnn:codes="63" openWnn:keyLabel="\?"/>
+    <Key openWnn:codes="-218" openWnn:keyIcon="@drawable/key_qwerty_left" openWnn:iconPreview="@drawable/key_qwerty_left_b"
+         openWnn:isRepeatable="true" wnn:isSecondKey="true"/>
+    <Key openWnn:codes="-217" openWnn:keyIcon="@drawable/key_qwerty_right" openWnn:iconPreview="@drawable/key_qwerty_right_b"
+         openWnn:isRepeatable="true" wnn:isSecondKey="true"/>
+    <Key openWnn:codes="-101" openWnn:keyIcon="@drawable/key_enter" openWnn:iconPreview="@drawable/key_enter_b"
+         openWnn:keyWidth="15%p" openWnn:keyEdgeFlags="right" wnn:isSecondKey="true"/>
   </Row>
 </Keyboard>
